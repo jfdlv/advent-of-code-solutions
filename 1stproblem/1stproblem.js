@@ -18,7 +18,6 @@ fs.readFile('./input.txt', (err, data)=> {
   let newArray = arrayOfNumbers.map((element, index)=>{
     return parseInt(element) + parseInt(arrayOfNumbers[index + 1]) + parseInt(arrayOfNumbers[index +2]);
   });
-  console.log(JSON.stringify(newArray));
   let secondCount = 0;
   newArray.forEach((element, index)=>{
     let previousElement = newArray[index-1];
